@@ -18,7 +18,7 @@ class Database{
     }
 
     public function query($sql){
-        $result = $this->connection->query($this->connection, $sql);
+        $result = $this->connection->query($sql);
 
         if(!$result){
             die("Query failed". $this->connection->error );
