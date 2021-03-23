@@ -9,35 +9,15 @@
             </h1>
             <?php
 
-                // echo User::$user_id;
-                // echo "<hr>";
-                // echo User::$username;
-                // echo "<hr>";
-                // echo User::$user_password;
-                // echo "<hr>";
-                // echo User::$user_firstname;
-                // echo "<hr>";
-                // echo User::$user_lastname;
-                // echo "<hr";
-                
-                $keys = User::find_all_user();
-                // print_r( $keys);
-                // foreach ($keys as $key) {
-                //     # code...
-                //     echo $key;
-                // }
-                // echo $keys;
-                // print_r($keys);
-                
-                $hello = User::instantation($keys);
-                // foreach ($keys as $key => $value) {
-                //     # code...
-                //     print_r($key);
-                // }
-                print_r($hello);
+                $row = User::find_all_user();
 
-                // print_r($hello);
-                // echo $hello;
+                foreach ($row as $rows) {
+                    echo $rows->username . "<hr>";
+                }
+
+                // $hi = new Car();
+
+                
 
 
 
